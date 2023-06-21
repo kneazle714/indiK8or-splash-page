@@ -1,0 +1,136 @@
+@import 'Variables.scss';
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  position: relative !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 3% !important;
+  height: 100px !important;
+}
+
+.intro-heading {
+  position: relative !important;
+  width: 1000px !important;
+  margin-top: 0 !important;
+  font-size: 55px !important;
+  top: 150px !important;
+  text-align: left;
+}
+
+.intro {
+  position: relative !important;
+  width: 1000px !important;
+  color: black !important;
+  font-size: 30px;
+  top: 150px !important;
+  text-align: left;
+}
+
+.button-container {
+  position: relative !important;
+  width: 90% !important;
+  top: 200px !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  text-align: left;
+}
+
+.authors {
+  font-size: 20px !important;
+  color: black !important;
+  padding-left: 0 !important;
+  text-align: left;
+}
+
+.name {
+  font-size: 20px !important;
+  color: black !important;
+  padding-right: 0px !important;
+}
+
+.linkedin {
+  padding: 0 !important;
+  position: 0 !important
+}
+
+.github {
+  padding: 0px !important;
+  padding-right: 5px !important;
+  background-color: transparent !important;
+}
+
+.signin {
+  position: absolute !important;
+  right: 8% !important;
+  background-color: white !important;
+  color: black !important;
+  width: 90px !important;
+}
+
+.signup {
+  position: absolute !important;
+  right: 2% !important;
+  background-color: rgb(96, 88, 88) !important;
+  color: white !important;
+}
+
+.navBar {
+  background-color: rgba(255,255,255,0.5) !important;
+}
+
+.gif-container {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  flex-direction: column !important;
+}
+
+.gif {
+  width: 1000px !important;
+}
+
+.feature {
+text-align: left !important;
+width: 1000px !important;
+margin-top: 17% !important;
+}
+
+#back {
+  background: $gradient;
+  background-size: $gradSize;
+  animation: $gradAnimation;
+  min-height: 500vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  75% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.welcome-container {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  flex-direction: column !important;
+}
