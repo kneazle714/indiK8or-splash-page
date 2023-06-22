@@ -29,11 +29,11 @@ const WelcomePage = () => {
         </h2>
         <Grid container className='gif-container'>
           <Grid item>
-            <h2 className="feature">Our app will provide a visual overview of your kubernetes cluster. The visualization will show the control plane, namespaces, pods, services, deployments and nodes.</h2>
+            <h2 className="feature1">Our app will provide a visual overview of your kubernetes cluster. The visualization will show the control plane, namespaces, pods, services, deployments and nodes.</h2>
             <img className="gif" src='https://user-images.githubusercontent.com/112515781/247570426-bf10b707-b72b-4b7e-8604-f96767da9d0b.gif'></img>
           </Grid>
           <Grid item>
-            <h2 className="feature">Our app will show you the health and status of the pods, it provides the details including image's name, ready, status, age, and IP. It additionally offers images & vulnerability scan.</h2>
+            <h2 className="feature2">Our app will show you the health and status of the pods, it provides the details including image's name, ready, status, age, and IP. It additionally offers images & vulnerability scan.</h2>
             <img className="gif" src='https://user-images.githubusercontent.com/112515781/247573036-13cd8a06-3849-4a95-8853-b0833db0899a.gif'></img>
           </Grid>
         </Grid>
@@ -41,18 +41,28 @@ const WelcomePage = () => {
           <Toolbar>
           <img className="logo" src={logo}></img>
             <Button
-              className="signin"
+              className="button1"
               variant="text"
               href="https://github.com/oslabs-beta/indiK8or"
+              target="_blank"
             >
               Github
             </Button>
             <Button
-              className="signup"
-              variant="outlined"
+              className="button2"
+              variant="text"
               href="/login/signupRequest"
+              target="_blank"
             >
               LinkedIn
+            </Button>
+            <Button
+              className="button3"
+              variant="text"
+              href="https://medium.com/@wanwangbtb/a-new-game-player-indik8or-237daac583d6"
+              target="_blank"
+            >
+              Blog
             </Button>
           </Toolbar>
         </AppBar>

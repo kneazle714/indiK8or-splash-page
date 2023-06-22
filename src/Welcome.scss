@@ -67,19 +67,28 @@ body,
   background-color: transparent !important;
 }
 
-.signin {
+.button1 {
   position: absolute !important;
-  right: 8% !important;
+  right: 20% !important;
   background-color: white !important;
   color: black !important;
   width: 90px !important;
 }
 
-.signup {
+.button2 {
   position: absolute !important;
-  right: 2% !important;
-  background-color: rgb(96, 88, 88) !important;
-  color: white !important;
+  right: 13% !important;
+  background-color: white !important;
+  color: black !important;
+  width: 90px !important;
+}
+
+.button3 {
+  position: absolute !important;
+  right: 6% !important;
+  background-color: white !important;
+  color: black !important;
+  width: 90px !important;
 }
 
 .navBar {
@@ -94,13 +103,20 @@ body,
 }
 
 .gif {
-  width: 1000px !important;
+  width: 900px !important;
+  
 }
 
-.feature {
+.feature1 {
 text-align: left !important;
 width: 1000px !important;
 margin-top: 17% !important;
+}
+
+.feature2 {
+  text-align: left !important;
+  width: 1000px !important;
+  margin-top: 5% !important;
 }
 
 #back {
