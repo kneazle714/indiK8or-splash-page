@@ -52,9 +52,9 @@ const WelcomePage = () => {
             <img className="gif" align="left" src='https://user-images.githubusercontent.com/112515781/247573036-13cd8a06-3849-4a95-8853-b0833db0899a.gif'></img>
           </Grid>
         </Grid>
-        <AppBar className="navBar">
-          <Toolbar>
-          <img className="logo" src={logo}></img>
+        <AppBar className="navbar">
+          <Toolbar className='toolbar'>
+          <img className="logo" src={logo} alt='Logo'/>
             <Button
               className="button1"
               variant="text"
