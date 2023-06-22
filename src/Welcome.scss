@@ -21,7 +21,7 @@ body,
   width: 1000px !important;
   margin-top: 0 !important;
   font-size: 55px !important;
-  top: 150px !important;
+  top: 200px !important;
   text-align: left;
 }
 
@@ -30,14 +30,14 @@ body,
   width: 1000px !important;
   color: black !important;
   font-size: 30px;
-  top: 150px !important;
+  top: 180px !important;
   text-align: left;
 }
 
 .button-container {
   position: relative !important;
   width: 90% !important;
-  top: 200px !important;
+  top: 10vh !important;
   margin: 0 !important;
   padding-left: 0 !important;
   text-align: left;
@@ -111,20 +111,20 @@ body,
 .feature1 {
 text-align: left !important;
 width: 1000px !important;
-margin-top: 17% !important;
+margin-top: 25% !important;
 }
 
 .feature2 {
   text-align: left !important;
   width: 1000px !important;
-  margin-top: 5% !important;
+  margin-top: 10% !important;
 }
 
 #back {
   background: $gradient;
   background-size: $gradSize;
   animation: $gradAnimation;
-  min-height: 500vh;
+  min-height: 250vh;
 }
 
 @keyframes gradient {
