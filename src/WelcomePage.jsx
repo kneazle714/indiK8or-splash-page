@@ -24,12 +24,24 @@ const WelcomePage = () => {
         </h1>
         <h2 className="intro">
         We are excited to present our powerful Kubernetes visualization tool, designed to enhance your Kubernetes cluster management 
-        experience while ensuring the security of your infrastructure. With our tool, not only can you gain valuable insights into the 
-        structure, status, and performance of your Kubernetes environment, but you can also proactively assess and address vulnerabilities. 
-        Our integrated vulnerability scan security feature provides comprehensive scanning capabilities, allowing you to identify and mitigate 
-        potential security risks in your Kubernetes deployments. This empowers you to make informed decisions, optimize your infrastructure, 
-        and maintain a secure and robust Kubernetes environment.
+        experience while ensuring the security of your infrastructure. By combining metrics visualization and vulnerability scanning,
+         our tool empowers you to optimize your infrastructure, make informed decisions, and maintain a secure Kubernetes environment.
         </h2>
+        <Typography variant="body1" className="header1" align="center" sx={{ fontWeight: 'bold' }}>
+              ☆ Getting Started ☆
+              </Typography>
+        <Grid container class='start-container'>
+          <Grid item>
+            <h2 className="start1">• Visit our GitHub repository <a href="https://github.com/oslabs-beta/indiK8or" target="_blank" rel="noopener noreferrer" className='hyperlink'>here.</a></h2>
+            <h2 className="start2">• Fork and clone the repository to your local machine.</h2>
+            <h2 className="start2">• Follow the steps in <a href="https://github.com/oslabs-beta/indiK8or#readme" target="_blank" rel="noopener noreferrer" className='hyperlink'>README</a> to start the application.</h2>
+          </Grid>
+        </Grid>
+        <Typography variant="body1" className="header2" align="center" sx={{ fontWeight: 'bold' }}>
+              <span role="img" aria-label="star" className="star">✼ </span>
+                About Our App
+                <span role="img" aria-label="star" className="star"> ✼</span>
+              </Typography>
         <Grid container class='gif-container'>
           <Grid item>
             <h2 className="feature1">Our app will provide a visual overview of your kubernetes cluster. The visualization will show the control plane, namespaces, pods, services, deployments and nodes.</h2>
@@ -49,7 +61,7 @@ const WelcomePage = () => {
               href="https://github.com/oslabs-beta/indiK8or"
               target="_blank"
             >
-              Github
+              GitHub
             </Button>
             <Button
               className="button2"
@@ -69,73 +81,20 @@ const WelcomePage = () => {
             </Button>
           </Toolbar>
         </AppBar>
-        {/* <Container className="button-container">
-          <Button className="authors" variant="text" disabled={true}>
-            Our engineers:
-          </Button>
-          <Button className="name" variant="text" disabled={true}>
-            Ivy Wang
-          </Button>
-          <IconButton
-            className="linkedin"
-            href="https://www.linkedin.com/in/wanwang12/"
-          >
-            <LinkedInIcon></LinkedInIcon>
-          </IconButton>
-          <IconButton
-            className="github"
-            href="https://github.com/WandefulWorld"
-          >
-            <GitHubIcon></GitHubIcon>
-          </IconButton>
-          <Button className="name" variant="text" disabled={true}>
-            Julian Babon
-          </Button>
-          <IconButton
-            className="linkedin"
-            href="https://www.linkedin.com/in/julianbabon/"
-          >
-            <LinkedInIcon></LinkedInIcon>
-          </IconButton>
-          <IconButton className="github" href="https://github.com/babonjmc">
-            <GitHubIcon></GitHubIcon>
-          </IconButton>
-          <Button className="name" variant="text" disabled={true}>
-            Tadd LeRocque
-          </Button>
-          <IconButton
-            className="linkedin"
-            href="https://www.linkedin.com/in/tadd-lerocque-120a0287/"
-          >
-            <LinkedInIcon></LinkedInIcon>
-          </IconButton>
-          <IconButton className="github" href="https://github.com/LeRocque">
-            <GitHubIcon></GitHubIcon>
-          </IconButton>
-          <Button className="name" variant="text" disabled={true}>
-            Yueran Li
-          </Button>
-          <IconButton
-            className="linkedin"
-            href="https://www.linkedin.com/in/yueran-li-ba79bb46/"
-          >
-            <LinkedInIcon></LinkedInIcon>
-          </IconButton>
-          <IconButton className="github" href="https://github.com/kneazle714">
-            <GitHubIcon></GitHubIcon>
-          </IconButton> */}
-        {/* </Container> */}
+        
         <Grid item>
             <Box className="team-container">
-              <Typography variant="body1" className="authors" align="center">
+              <Typography variant="body1" className="authors" align="center" sx={{ fontWeight: 'bold' }}>
+              <span role="img" aria-label="star" className="star">♥ </span>
                 Meet the Team
+                <span role="img" aria-label="star" className="star"> ♥</span>
               </Typography>
               <Grid container>
                 <Grid item>
                   <Box className="team-box">
-                    <img src='https://user-images.githubusercontent.com/112515781/246527162-176051e8-ef3e-410f-bc76-b808f36c28df.png' alt="Ivy Wang" />
-                    <Typography variant="subtitle1">Ivy Wang</Typography>
-                    <Box display="flex">
+                    <img className="team-photo" src='https://user-images.githubusercontent.com/112515781/246527162-176051e8-ef3e-410f-bc76-b808f36c28df.png' alt="Ivy Wang" />
+                    <Typography variant="subtitle1" className="name" sx={{ fontWeight: 'bold' }}>Ivy Wang</Typography>
+                    <Box className="team-icon" display="flex">
                       <IconButton href="https://www.linkedin.com/in/wanwang12/">
                         <LinkedInIcon />
                       </IconButton>
@@ -147,9 +106,9 @@ const WelcomePage = () => {
                 </Grid>
                 <Grid item>
                   <Box className="team-box">
-                    <img src='https://user-images.githubusercontent.com/112515781/246527230-794a60b7-b0b2-461c-b0de-f698ee506387.png' alt="Julian Babon" />
-                    <Typography variant="subtitle1">Julian Babon</Typography>
-                    <Box display="flex">
+                    <img className="team-photo" src='https://user-images.githubusercontent.com/112515781/246527230-794a60b7-b0b2-461c-b0de-f698ee506387.png' alt="Julian Babon" />
+                    <Typography variant="subtitle1" className="name" sx={{ fontWeight: 'bold' }}>Julian Babon</Typography>
+                    <Box className="team-icon" display="flex">
                       <IconButton href="https://www.linkedin.com/in/julianbabon/">
                         <LinkedInIcon />
                       </IconButton>
@@ -161,9 +120,9 @@ const WelcomePage = () => {
                 </Grid>
                 <Grid item>
                   <Box className="team-box">
-                    <img src='https://user-images.githubusercontent.com/112515781/246527136-5d6998e9-07cf-4189-81d9-291b09188063.png' alt="Tadd LeRocque" />
-                    <Typography variant="subtitle1">Tadd LeRocque</Typography>
-                    <Box display="flex">
+                    <img className="team-photo" src='https://user-images.githubusercontent.com/112515781/246527136-5d6998e9-07cf-4189-81d9-291b09188063.png' alt="Tadd LeRocque" />
+                    <Typography variant="subtitle1" className="name" sx={{ fontWeight: 'bold' }}>Tadd LeRocque</Typography>
+                    <Box className="team-icon" display="flex">
                       <IconButton href="https://www.linkedin.com/in/tadd-lerocque-120a0287/">
                         <LinkedInIcon />
                       </IconButton>
@@ -175,9 +134,9 @@ const WelcomePage = () => {
                 </Grid>
                 <Grid item>
                   <Box className="team-box">
-                    <img src='https://user-images.githubusercontent.com/112515781/247617247-7d6f4638-f815-4337-87b3-853fe26fe454.png' alt="Yueran Li" />
-                    <Typography variant="subtitle1">Yueran Li</Typography>
-                    <Box display="flex">
+                    <img className="team-photo" src='https://user-images.githubusercontent.com/112515781/247617247-7d6f4638-f815-4337-87b3-853fe26fe454.png' alt="Yueran Li" />
+                    <Typography variant="subtitle1" className="name" sx={{ fontWeight: 'bold' }}>Yueran Li</Typography>
+                    <Box className="team-icon" display="flex">
                       <IconButton href="https://www.linkedin.com/in/yueran-li-ba79bb46/">
                         <LinkedInIcon />
                       </IconButton>
