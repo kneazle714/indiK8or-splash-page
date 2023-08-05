@@ -33,7 +33,6 @@ const WelcomePage = () => {
         <Grid container class='start-container'>
           <Grid item>
             <h2 className="start1">• Visit our GitHub repository <a href="https://github.com/oslabs-beta/indiK8or" target="_blank" rel="noopener noreferrer" className='hyperlink'>here.</a></h2>
-            <h2 className="start2">• Fork and clone the repository to your local machine.</h2>
             <h2 className="start2">• Follow the steps in <a href="https://github.com/oslabs-beta/indiK8or#readme" target="_blank" rel="noopener noreferrer" className='hyperlink'>README</a> to start the application.</h2>
           </Grid>
         </Grid>
@@ -44,7 +43,7 @@ const WelcomePage = () => {
               </Typography>
         <Grid container class='gif-container'>
           <Grid item>
-            <h2 className="feature1">Our app will provide a visual overview of your kubernetes cluster. The visualization will show the control plane, namespaces, pods, services, deployments and nodes.</h2>
+            <h2 className="feature1">Our app will provide a visual overview of your kubernetes cluster. The dashboard will show CPU, memory, disk and network metrics.</h2>
             <img className="gif" align="left" src='https://user-images.githubusercontent.com/112515781/247570426-bf10b707-b72b-4b7e-8604-f96767da9d0b.gif'></img>
           </Grid>
           <Grid item>
